@@ -3,7 +3,7 @@ import numpy as np
 from keras.models import load_model
 faceCascade = cv2.CascadeClassifier('haarcascade_frontalface_alt2.xml')
 
-video_capture = cv2.VideoCapture(0)
+video_capture = cv2.VideoCapture(1)
 model = load_model('keras_model.hdf5')
 
 target = ['angry','disgust','fear','happy','sad','surprise','neutral']
