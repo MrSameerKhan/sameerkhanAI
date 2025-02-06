@@ -17,3 +17,11 @@ only push:
 git add .
 git commit -m "Your commit message"
 git push origin main
+
+
+only pull:
+git status
+git stash
+git fetch origin
+git pull --rebase=false origin main
+git stash pop
