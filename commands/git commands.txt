@@ -1,3 +1,6 @@
+
+Pull then Push:
+
 git status
 git stash # (If uncommitted changes exist)
 git fetch origin
@@ -10,3 +13,7 @@ git push origin main
 
 
 only push:
+
+git add .
+git commit -m "Your commit message"
+git push origin main
