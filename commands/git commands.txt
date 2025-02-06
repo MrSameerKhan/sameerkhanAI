@@ -1,3 +1,12 @@
-git pull --rebase=false origin main
+git status
+git stash # (If uncommitted changes exist)
+git fetch origin
+git pull --rebase=false origin main # (or git pull --rebase origin main)
+git stash pop # (If you used stash earlier)
+git add .
+git commit -m "Your commit message"
+git push origin main
 
-git add *
+
+
+only push:
